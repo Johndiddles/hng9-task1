@@ -1,0 +1,9 @@
+.profile__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #101828;
+}
+
+.hidden {
+  display: none;
+}
