@@ -9,7 +9,7 @@ const SocialLinks = () => {
       <a href="https://slack.com">
         <img src={slack} alt="slack" />
       </a>
-      <a href="https://github.com/Johndiddles">
+      <a href="https://github.com/Johndiddles/hng9-task1.git">
         <img src={github} alt="slack" />
       </a>
     </div>
