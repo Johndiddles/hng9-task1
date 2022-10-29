@@ -1,0 +1,12 @@
+.socialLinks__wrapper {
+  display: flex;
+  gap: 1.625rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.socialLinks__wrapper a img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
