@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LinksList.module.css";
 
-const SingleLink = ({ name, link, id }) => {
+const SingleLink = ({ name, link, id, subText }) => {
   return (
     <a
       id={id}
@@ -11,6 +11,7 @@ const SingleLink = ({ name, link, id }) => {
       rel="noreferrer"
     >
       {name}
+      <sub>{subText}</sub>
     </a>
   );
 };

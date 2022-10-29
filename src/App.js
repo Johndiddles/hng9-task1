@@ -3,12 +3,14 @@ import Footer from "./components/Footer/Footer";
 import LinksList from "./components/LinksList/LinksList";
 import ProfileName from "./components/ProfileName/ProfileName";
 import ProfilePicture from "./components/ProfilePicture/ProfilePicture";
+import ShareButton from "./components/ShareButton/ShareButton";
 import SocialLinks from "./components/SocialLinks/SocialLinks";
 
 function App() {
   return (
     <div className="profile__page">
       <div className="profile__content">
+        <ShareButton />
         <ProfilePicture />
         <ProfileName id="twitter" name="DiddlesCode" />
         <ProfileName id="slack" name="Johndiddles" />

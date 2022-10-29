@@ -18,6 +18,11 @@
   width: 11.5rem;
 }
 
+.i4g {
+  height: 2rem;
+  width: 8.25rem;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;

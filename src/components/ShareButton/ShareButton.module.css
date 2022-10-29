@@ -1,0 +1,35 @@
+.shareButton__wrapper {
+  position: absolute;
+  top: 3.5rem;
+  right: 25%;
+}
+
+.shareButton__wrapper img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.shareButton__wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.mobileNavButton {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .shareButton__wrapper {
+    right: 1rem;
+    top: 2.75rem;
+  }
+
+  .shareButton {
+    display: none;
+  }
+
+  .mobileNavButton {
+    display: block;
+  }
+}

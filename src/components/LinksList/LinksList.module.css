@@ -11,4 +11,8 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: #eaecf0;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
 }
