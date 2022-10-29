@@ -1,0 +1,19 @@
+.profileImage__wrapper {
+  width: 5.5rem;
+  height: 5.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.375rem solid transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.profileImage {
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.profileImage__wrapper:hover {
+  border: 0.375rem solid #ebe9fe;
+}
