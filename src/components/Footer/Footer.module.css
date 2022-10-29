@@ -25,7 +25,17 @@
     gap: 1rem;
   }
 
+  .footer__text {
+    font-size: 0.875rem;
+  }
+
+  .zuri {
+    height: 1.25rem;
+    width: auto;
+  }
+
   .i4g {
     height: 1.5rem;
+    width: auto;
   }
 }
