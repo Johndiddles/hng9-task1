@@ -1,22 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import LinksList from "./components/LinksList/LinksList";
-import ProfileName from "./components/ProfileName/ProfileName";
-import ProfilePicture from "./components/ProfilePicture/ProfilePicture";
-import ShareButton from "./components/ShareButton/ShareButton";
-import SocialLinks from "./components/SocialLinks/SocialLinks";
+import ContactPage from "./Pages/ContactPage";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div className="profile__page">
-      <div className="profile__content">
-        <ShareButton />
-        <ProfilePicture />
-        <ProfileName id="twitter" name="DiddlesCode" />
-        <ProfileName id="slack" name="Johndiddles" />
-        <LinksList />
-        <SocialLinks />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );
