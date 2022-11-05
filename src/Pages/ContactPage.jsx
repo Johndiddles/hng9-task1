@@ -18,6 +18,15 @@ const ContactPage = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
 
+  const clearInputs = () => {
+    setIsAgreed(false);
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+    setMessageError(false);
+  };
+
   const sendMessage = (e) => {
     e.preventDefault();
     if (firstName === "") {
@@ -45,6 +54,8 @@ const ContactPage = () => {
     alert(
       `Hello ${firstName}, \nThanks for reaching out. I'll get back to you soon`
     );
+
+    clearInputs();
   };
   return (
     <div className="w-full flex flex-col pb-16 lg:py-40 justify-center items-center">
