@@ -5,11 +5,13 @@ import styles from "./LinksList.module.css";
 const LinksList = () => {
   return (
     <div className={styles.links__wrapper}>
-      {/* <SingleLink
-        id=""
-        name="Twitter Profile"
-        link="https://twitter.com/DiddlesCode"
-      /> */}
+      <SingleLink
+        id="contact"
+        name="Contact"
+        link="/contact"
+        blank={false}
+        useLink={true}
+      />
       <SingleLink
         id="btn__zuri"
         name="Zuri Team"
