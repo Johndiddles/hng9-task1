@@ -27,34 +27,42 @@ const ContactPage = () => {
     setMessageError(false);
   };
 
-  const sendMessage = (e) => {
-    e.preventDefault();
+  const validate = () => {
+    let isValid = true;
     if (firstName === "") {
       firstNameRef.current.focus();
       firstNameRef.current.value = "";
-      return;
+      return (isValid = false);
     }
     if (lastName === "") {
       lastNameRef.current.focus();
       lastNameRef.current.value = "";
-      return;
+      return (isValid = false);
     }
     if (email === "") {
       emailRef.current.focus();
       emailRef.current.value = "";
-      return;
+      return (isValid = false);
     }
 
     if (message === "") {
       messageRef.current.focus();
       messageRef.current.value = "";
+      return (isValid = false);
+    }
+
+    return isValid;
+  };
+
+  const sendMessage = (e) => {
+    e.preventDefault();
+    if (!validate()) {
       return;
     }
 
     alert(
       `Hello ${firstName}, \nThanks for reaching out. I'll get back to you soon`
     );
-
     clearInputs();
   };
   return (
